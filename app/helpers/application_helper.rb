@@ -1,6 +1,6 @@
 module ApplicationHelper
 
   def logo
-    image_tag "logo.png", :alt => "Damien's chatorama", :class => "round" 
+    image_tag "logo.png", :alt => "Natterbox", :class => "round" 
   end
 end
