@@ -1,7 +1,7 @@
 module PagesHelper
 
   def title
-    base_title = "Damien's chat-o-rama"
+    base_title = "Natterbox"
     if @title.nil?
       base_title
     else

@@ -2,9 +2,8 @@ SampleApp::Application.routes.draw do
   # set the root path to home
   root :to => 'pages#home'
 
-  get "users/new"
-  
-  # set alternate signup path
+  # routes for handling users
+  resources :users
   match '/signup', :to => 'users#new'
 
   match '/contact', :to => 'pages#contact'
