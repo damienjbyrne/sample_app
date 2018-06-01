@@ -1,7 +1,15 @@
 SampleApp::Application.routes.draw do
-  get "pages/home"
-  get "pages/contact"
-  get "pages/about"
+  # set the root path to home
+  root :to => 'pages#home'
+
+  get "users/new"
+  
+  # set alternate signup path
+  match '/signup', :to => 'users#new'
+
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
+  match '/help',    :to => 'pages#help'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
